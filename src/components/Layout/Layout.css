@@ -8,7 +8,8 @@ header {
 }
 
 nav {
-   height: 100%;
+    user-select: none;
+    height: 100%;
     margin: 24px;
 }
 
@@ -21,6 +22,10 @@ nav a {
     float: right;
 }
 
+nav a:hover{
+    opacity: 0.8;
+    border-bottom: 1px solid black;
+}
 .logo-container {
     height: 100%;
     margin-left: 24px;
@@ -55,7 +60,7 @@ nav a {
     float: none;
 }
 
-/* mobile queries */
+/* mobile queries for navbar and header */
 
 @media only screen and (max-width: 1024px) {
     .mobile-nav {
@@ -72,4 +77,84 @@ nav a {
     nav a {
         float: none;
     }
+}
+
+section {
+    display: flex;
+    background-color: #d8d8d8;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+section img {
+    float:left;
+    margin: 32px 24px;
+    width: 60%;
+}
+
+section div {
+    user-select: none;
+    width: 30%;
+    float: left;
+    margin: 32px 24px;
+}
+
+section div p{  
+    margin: 24px;
+    font-size: 1.75em;
+    font-weight: bold;
+  
+}
+
+section div h1{
+    margin: 24px;
+    font-size: 3em;
+     
+   }
+
+section div button {
+    margin: 24px;
+    font-size: 1.2em;
+    width: 100%;
+    background-color: #4a4a4a;
+    color: #d8d8d8;
+    border: none;
+    padding: 8px;
+}
+
+section div button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* mobile queries start section*/
+
+@media only screen and (max-width: 1024px) {
+    section {
+        display: block;
+    }
+    section img {
+        margin: 0;
+        width: 100%;
+
+    }
+    section div {
+        background-color: #d8d8d8;
+        margin: 0;
+        width: 100%;
+    }
+
+    section div h1{
+    margin: 24px;
+    font-size: 3em;
+     
+   }
+
+   
+   section div button{
+    margin: 24px;
+    width: 80%;
+     
+   }
 }
