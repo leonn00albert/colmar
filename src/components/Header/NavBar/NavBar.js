@@ -25,13 +25,13 @@ export function NavBar() {
         <nav>
             <div className="desktop-nav">
             <Logo />
-            {navbar.items.map(item => {
-                return <a href={item.url}>{item.text}</a>
+            {navbar.items.map((item, i) => {
+                return <a key={i} href={item.url}>{item.text}</a>
             })}
             </div>
             <div className="mobile-nav">
-            {navbar.itemsMobile.map(item => {
-                return <a href={item.url}><img src={item.icon} /></a>
+            {navbar.itemsMobile.map((item, i) => {
+                return <a key={i} href={item.url}><img alt="icon" src={item.icon} /></a>
             })}
             </div>
         </nav>

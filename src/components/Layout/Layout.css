@@ -1,6 +1,7 @@
 html {
-    color: #4a4a4a;
+    color: #6a6a6a;
 }
+
 
 header {
     height: 64px;
@@ -78,6 +79,10 @@ nav a:hover{
         float: none;
     }
 }
+
+
+/*=======================================================================*/
+
 
 section:nth-of-type(1) {
     display: flex;
@@ -158,10 +163,16 @@ section:nth-of-type(1) div button:hover{
      
    }
 }
+/* ------ end heroSection -------- */  
+/*=======================================================================*/
+/* ------ start featureSection -------- */  
 
 section:nth-of-type(2) {
+    display: block;
     background-color: white;
     box-sizing: border-box;
+    width: 100%;
+    height: 900px;
 }
 
 section:nth-of-type(2) .container{
@@ -177,7 +188,6 @@ section:nth-of-type(2) .container article{
 }
 
 section:nth-of-type(2) .container article h2{
-
     font-size: 2em;
 }
 
@@ -220,4 +230,184 @@ section:nth-of-type(2) .container aside div div h3{
 section:nth-of-type(2) .container aside div div a{
     text-decoration: none;
     color:#37b6ee;
+}
+
+section:nth-of-type(2) .container aside div:hover {
+    background-color: #d8d8d8;
+}
+
+/* ------ end featureSection -------- */  
+
+
+/*=======================================================================*/
+
+
+/* ------ start Courses (learning) Section -------- */  
+section:nth-of-type(3) {
+    position: initial;
+    background-color: #d8d8d8;
+    box-sizing: border-box; 
+    width: 100%;
+    padding: 32px 72px;
+}
+
+section:nth-of-type(3) h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 32px;
+}
+
+
+section:nth-of-type(3) .cards-section {
+    background: #d8d8d8;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+section:nth-of-type(3) .card {
+    box-sizing: border-box;
+    background-color: white;
+    width: 25%;
+    margin: 32px;
+    float: left;
+    border-radius: 3px;
+    
+
+}
+
+
+section:nth-of-type(3) .card:hover {
+    box-shadow: 10px 10px 5px grey;
+    opacity: 0.9; 
+    cursor: pointer;
+
+}
+section:nth-of-type(3) .card img {
+    height: auto;
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+    
+
+}
+
+section:nth-of-type(3) .card h3{
+    font-size: 1.5em;
+    margin: 24px 16px;
+
+}
+
+section:nth-of-type(3) .card p{
+    color: #797979;
+    margin: 8px 16px;
+
+}
+
+
+section:nth-of-type(3) .card p:last-of-type{
+    color: #606060;
+    margin-bottom: 24px;
+
+}
+/* ------ end Courses (learning) Section -------- */  
+
+/*=======================================================================*/
+
+/* Thesis Sectiom */
+
+
+section:nth-of-type(4) {
+    display: block;
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 900px;
+}
+
+section:nth-of-type(4) .container{
+ 
+    width: 100%;
+    margin: 32px 24px;
+}
+
+
+section:nth-of-type(4) .container article{
+    float: left;
+    width: 60%;
+}
+
+section:nth-of-type(4) .container article h2{
+    font-size: 2em;
+}
+
+
+section:nth-of-type(4) .container article video{
+    width: 100%;
+}
+
+section:nth-of-type(4) .container aside {
+    float: left;
+    width: 40%;
+}
+
+section:nth-of-type(4) .container aside div {
+    width: 100%;
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    margin-left: 16px;
+}
+
+
+
+section:nth-of-type(4) .container aside div img {
+    float: left;
+    height: auto;
+    width: 35%;
+}
+
+section:nth-of-type(4) .container aside div div {
+    display: block;
+    float: right;
+    width: 65%;
+}
+
+section:nth-of-type(4) .container aside div div h3{
+    font-size: 1.5em;
+}
+
+section:nth-of-type(4) .container aside div div a{
+    text-decoration: none;
+    color:#37b6ee;
+}
+
+section:nth-of-type(4) .container aside div:hover {
+    background-color: #d8d8d8;
+}
+
+
+
+/*=======================================================================*/
+
+footer {
+    width: 90%;
+}
+footer p {
+    margin: 1em;
+    color: grey;
+    float: left;
+}
+
+footer p span {
+  margin: 1em;
+}
+
+
+footer p:nth-of-type(2) {
+    color: grey;
+    float: right;
 }
